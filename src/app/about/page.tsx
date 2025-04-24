@@ -17,6 +17,14 @@ import { person, about, social } from "@/app/resources/content";
 import React from "react";
 import { Meta, Schema } from "@/once-ui/modules";
 
+// ✅ Ajout du type pour typer les images
+type ProjectImage = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
 export async function generateMetadata() {
   return Meta.generate({
     title: about.title,
@@ -216,7 +224,7 @@ export default function About() {
                     </Column>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image, index) => (
+                        {experience.images.map((image: ProjectImage, index) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
@@ -280,7 +288,7 @@ export default function About() {
                     </Text>
                     {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
+                        {skill.images.map((image: ProjectImage, index) => (
                           <Flex
                             key={index}
                             border="neutral-medium"

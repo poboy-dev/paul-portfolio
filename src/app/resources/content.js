@@ -15,7 +15,7 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: (
     <>
       I occasionally write about technology,cybersecurity.
@@ -62,8 +62,8 @@ const home = {
   },
   subline: (
     <>
-      Hello, I'm Paul Patrice, a web developer passionate about creating robust, intuitive, and responsive web applications.
-<br></br> When I'm not coding for clients, I work on personal projects to learn and explore new technologies.
+      Hello, I&apos;m Paul Patrice, a web developer passionate about creating robust, intuitive, and responsive web applications.
+<br></br> When I&apos;m not coding for clients, I work on personal projects to learn and explore new technologies.
   
     </>
   ),
@@ -90,8 +90,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-         Hello, I'm Paul Patrice, a web developer passionate about creating robust, intuitive, and responsive web applications.
-<br></br> When I'm not coding for clients, I work on personal projects to learn and explore new technologies.
+         Hello, I&apos;m Paul Patrice, a web developer passionate about creating robust, intuitive, and responsive web applications.
+<br></br> When I&apos;m not coding for clients, I work on personal projects to learn and explore new technologies.
   
       </>
     ),
